@@ -7,7 +7,7 @@ class Figuras:
         try:
             lado = float(lado)
             return lado * lado
-        except Exception, e:
+        except Exception:
             return 'dato incorrecto'
 
     def rectangulo(self, base, altura):
@@ -18,7 +18,7 @@ class Figuras:
                 base = float(base)
                 altura = float(altura)
                 return base * altura
-        except Exception, e:
+        except Exception:
             return 'dato incorrecto'
 
     def triangulo(self, base, altura):
@@ -29,7 +29,7 @@ class Figuras:
                 base = float(base)
                 altura = float(altura)
                 return (base * altura) / 2
-        except Exception, e:
+        except Exception:
             return 'dato incorrecto'
 
     def circunferencia(self, radio):
@@ -39,5 +39,5 @@ class Figuras:
             else:
                 radio = float(radio)
                 return m.pi * m.pow(radio, 2)
-        except Exception, e:
+        except Exception:
             return 'dato incorrecto'
