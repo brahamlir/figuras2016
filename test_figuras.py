@@ -6,9 +6,9 @@ class TestFiguras(unittest.TestCase):
 	def setUp(self):
 		self.figura = Figuras()
 
-	def test_area_cuadrado_lado_5(self):
-		resultado = self.figura.cuadrado(5)
-		self.assertEqual(25, resultado)
+	def test_area_cuadrado_lado_7(self):
+		resultado = self.figura.cuadrado(7)
+		self.assertEqual(49, resultado)
 
 	def test_area_cuadrado_lado_6(self):
 		resultado = self.figura.cuadrado(6)
